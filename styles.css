@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Karla&family=Kumbh+Sans&family=Outfit&display=swap');
+
+/* || Reset */
+
+*,
+*::before,
+*::after {
+
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+/* Variables */
+
+:root {
+    --primary-color1: #2ab2af;
+    --primary-color2: #c0df34;
+    /* Secondary color */
+    --neutral-color1: #e5eff5;
+    --neutral-color2: #98a6bd;
+}
+
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    min-height: 100vh;
+    background-color: var(--neutral-color1);
+    color: var(--neutral-color2);
+    line-height: 1.5;
+    display: grid;
+    place-content: center;
+}
+
+.container {
+    width: 375px;
+    
+    
+
+}
+/* top section */
+
+.card {
+    /* padding: 1rem; */
+    max-width: 300px;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    
+}
+
+.card__section {
+    padding: 1rem;
+}
+
+.card--title {
+    color: var(--primary-color1);
+    font-size: 1.2rem;
+    font-weight: 700;
+
+}
+
+.card--trial {
+    color: var(--primary-color2);
+    font-weight: 700;
+    margin: 1rem 3rem 1rem 0;
+
+}
+
+.card__descr {
+    margin: 0 1.5rem 1rem 0;
+    font-size: 0.8rem;
+
+}
+
+/* || buttom left */
+
+.buttom-part--left {
+    background-color: var(--primary-color1);
+    color: var(--neutral-color1);
+    padding: 1rem;
+}
+
+.buttom-part--heading {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.price-cart {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    
+}
+
+.price-cart--fee {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.price-cart--permonth{
+    opacity: 0.5;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 0.5rem;
+}
+.buttom-part--btn {
+    width: 16rem;
+    height: 2.5rem;
+    background: var(--primary-color2);
+    border: none;
+    color: #ffffff;
+    font-weight: 700;
+    margin: 1rem 0;cursor: pointer;
+    border-radius: 0.4rem;
+}
+.buttom-part--btn:hover {
+    color: var(--primary-color1);
+    
+}
+
+/* ||buttom right */
+
+.bottom__right {
+    background-color: var(--primary-color1);
+    opacity: 0.8;
+    color: var(--neutral-color1);
+    padding: 1rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+
+}
+.bottom__right__heading {
+    color: var(--neutral-color1);
+    font-weight:700 ;
+}
+.bottom__right > ul {
+    list-style-type: none;
+    margin: 1rem 0;
+    
+}
+.bottom__right > ul > li {
+    opacity: 0.6;
+}
+
+
+@media screen and (min-width:576px) {
+
+    .container {
+        width: 1440px;
+        /* height: 100vh; */
+        display: flex;
+        justify-content: center;
+    }
+    
+    .card {
+        max-width: 40rem;
+        
+        
+    }
+    .card__section {
+        margin-left: 1rem;
+        margin-top: 2rem;
+    }
+    .card__descr{
+        font-size: 1rem;
+    }
+
+    .buttom-part {
+        display: flex;
+        flex-direction: row;
+    
+    }
+     .buttom-part--left {
+        border-radius: 0 0 0 0.5rem;
+        /* margin-top: 2rem; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
+     }
+     .buttom-part--heading , .price-cart, .buttom-part__descr, .buttom-part--btn {
+        margin-left: 1rem;
+        
+     }
+     
+    .bottom__right {
+        width: 100%;
+        border-radius: 0 0 0.5rem 0;
+        /* margin-top: 2rem; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .bottom__right__heading, .bottom__right > ul {
+        margin-left: 1rem;
+    }
+    
+}
